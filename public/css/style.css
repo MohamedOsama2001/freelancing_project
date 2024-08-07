@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*       login and register          */
+.main-form {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color:white;
+    padding: 20px;
+    margin-top: 100px;
+    color:black;
+}
+.main-form a{
+    color: red;
+    text-decoration: none;
+}
+.main-form a:hover{
+    text-decoration: underline;
+}
+/* home page */
+.navbar .user-actions i{
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+.navbar .user-actions i:hover{
+    color: darkred;
+}
+.navbar .user-actions span .user-name{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+.navbar .user-actions span .user-name:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+
+.carousel {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+}
+.categories{
+    width: 100%;
+    padding-top: 30px;
+}
+.categories .categories-content .category-image{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+}
+.category-image img{
+    width: 100%;
+    height: 100%;
+}
+.category-image .image-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    visibility: hidden;
+}
+.image-overlay a{
+    color: white;
+    text-decoration: none;
+}
+.image-overlay a:hover{
+    text-decoration: underline;
+}
+.category-image:hover .image-overlay{
+    visibility: visible;
+}
+.categories .categories-head{
+    text-align: center;
+}
+.categories-head .line{
+    width: 100px;
+    border: 2px solid red;
+    margin: auto;
+    transition: 1s;
+}
+.categories-head:hover .line{
+    width: 150px;
+    transition: 1s;
+}
+/*       footer      */
+.footer {
+    padding: 20px 0;
+    background-color: rgb(209, 202, 202);
+}
+.footer-logo img {
+    height: 40px;
+}
+.footer .descrp{
+    color: black;
+    font-weight: bold;
+}
+.footer-social-icons a {
+    margin: 0 10px;
+    color:black;
+    text-decoration: none;
+}
+.footer-social-icons a:hover {
+    color: red;
+}
+/*         admin panel      */
+.navbar-custom {
+    background-color: #343a40;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-item a {
+    color: #fff;
+}
+.navbar-custom .nav-item a:hover {
+    color: #343a40;
+}
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+.sidebar .nav-item .nav-link{
+    color: white;
+    background-color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #343a40;
+    text-align: center;
+}
+.sidebar .nav-item .nav-link:hover{
+    background-color: burlywood;
+    color: white;
+}
+.sidebar.collapsed {
+    transform: translateX(-250px);
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    margin-top: 100px;
+}
+.content .table{
+    text-align: center;
+}
+.content h2{
+    color: #343a40;
+}
+.content .btn{
+    background-color: #343a40;
+    color: white;
+}
+.content .btn:hover{
+    background-color: #343a40;
+    color:burlywood;
+}
+.content form{
+    width: 60%;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+.content form .btn{
+    background-color: white;
+    color: #343a40;
+}
+.content form .btn:hover{
+    background-color:burlywood;
+    color: white;
+}
+.content .table .actions li{
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    color: #343a40;
+    cursor: pointer;
+}
+.content .table .actions li a i{
+    color: #343a40;
+}
+.content .table .actions li:hover{
+    background-color:burlywood;
+}
+.content.expanded {
+    margin-left: 0;
+}
+@media (max-width: 991px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+    .sidebar.collapsed {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
