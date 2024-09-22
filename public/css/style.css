@@ -90,16 +90,6 @@
 .categories .categories-head{
     text-align: center;
 }
-.categories-head .line{
-    width: 100px;
-    border: 2px solid red;
-    margin: auto;
-    transition: 1s;
-}
-.categories-head:hover .line{
-    width: 150px;
-    transition: 1s;
-}
 /*       footer      */
 .footer {
     padding: 20px 0;
@@ -142,6 +132,7 @@
     padding: 20px;
     border-right: 1px solid #ddd;
     transition: transform 0.3s ease;
+    margin-top:60px;
 }
 .sidebar .nav-item .nav-link{
     color: white;
